@@ -16,7 +16,8 @@ public class BowlingGame {
 			 for (int i = 0; i <= 9; i++) {
 			 roundScore += g.getEachRoundScore(i,scr,score);
 			 }
-			
+			  return roundScore;
+    }
 	// 保存分数
 	public int[][] saveScore(String[] goalScore) {
 		
@@ -126,7 +127,7 @@ public class BowlingGame {
 			}
 		}
 		
-		System.out.println("第" + round + "轮得分是" + eachRoundScore);
+		
 		return eachRoundScore;
 	}
 
@@ -145,6 +146,5 @@ public class BowlingGame {
 		else
 			return true;
 	}
-        return roundScore;
-    }
+      
 }
