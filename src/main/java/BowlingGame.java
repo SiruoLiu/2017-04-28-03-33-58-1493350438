@@ -2,15 +2,14 @@ public class BowlingGame {
 
     public int getBowlingScore(String bowlingCode) {
         int index = 0;
-	    static int[][] score = new int[11][2];
+	    int[][] score = new int[11][2];
 
-	    static {
 		for (int i = 0; i < 11; i++) {
 			score[i][0] = 0;
 			score[i][1] = 0;
 		    }
-    	}
-			
+   
+		
 			String[] scr = bowlingCode.split("\\|"); // |要加转义字符才可以
             score=g.saveScore(scr);
 			 for (int i = 0; i <= 9; i++) {
