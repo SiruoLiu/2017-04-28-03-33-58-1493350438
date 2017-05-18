@@ -15,7 +15,7 @@ public class BowlingGame {
     ////////////////////////////////////////
 		   // 保存分数
 	
-				for (int index = 0; index < 10; index++) {
+				for (index = 0; index < 10; index++) {
 					if (scr[index].equals("X")) // X设为10
 					{
 						score[index][0] = 10;
